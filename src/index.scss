@@ -15,5 +15,40 @@
 body {
     font-family: 'Rubik', sans-serif;
     background-color: var(--background-color);
-    color: var(--text-color);
+    color: var(--text-color-dark);
+}
+
+.landing-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.auth-section {
+    text-align: center;
+
+    h1 {
+        margin-bottom: 2rem;
+        color: var(--primary-color);
+    }
+}
+
+.dashboard-container {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--text-color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content {
+    padding: 2rem;
 }
