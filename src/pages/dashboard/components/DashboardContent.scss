@@ -1,0 +1,8 @@
+@use '../../../styles/variables' as *;
+
+.dashboard-content {
+    padding: 2rem;
+    background-color: $talentcontrolhr-500;
+    height: 100vh;
+    overflow-y: auto;
+}

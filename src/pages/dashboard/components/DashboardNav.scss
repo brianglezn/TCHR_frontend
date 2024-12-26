@@ -1,0 +1,71 @@
+@use '../../../styles/variables' as *;
+
+.dashboard-nav {
+    height: 100vh;
+    width: 250px;
+    transition: all 0.3s ease;
+    border-right: 1px solid $talentcontrolhr-200;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &.collapsed {
+        width: 80px;
+
+        .nav-header {
+            img {
+                width: 50px;
+                height: auto;
+            }
+        }
+    }
+
+    .nav-header {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $talentcontrolhr-200;
+
+        img {
+            width: 85%;
+            height: auto;
+            transition: width 0.2s ease;
+        }
+    }
+
+    .nav-items {
+        flex-grow: 1;
+        overflow-y: auto;
+        margin: 1rem 0;
+    }
+
+    .nav-footer {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid $talentcontrolhr-200;
+        width: 100%;
+
+        .toggle-button {
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: $talentcontrolhr-600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            border-radius: $border-radius;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background-color: $talentcontrolhr-100;
+            }
+        }
+    }
+}

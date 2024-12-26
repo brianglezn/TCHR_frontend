@@ -1,0 +1,14 @@
+@use '../../styles/variables' as *;
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: $background-color;
+    transition: all 0.3s ease;
+
+    &.nav-collapsed {
+        grid-template-columns: 80px 1fr;
+    }
+}
