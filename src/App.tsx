@@ -5,7 +5,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 import Dashboard from './pages/dashboard/Dashboard';
 import Home from './pages/landing/Home';
-import Auth from './pages/landing/auth/Auth';
 
 import ProtectedRoute from './components/ProtectedRoute';
 import ThemeLight from './theme/ThemeLight';
@@ -25,8 +24,7 @@ export default function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/sign-in/*" element={<Auth />} />
-            <Route path="/sign-up/*" element={<Auth />} />
+            <Route path="/sign-up/*" element={<Home />} />
             <Route
               path="/dashboard/*"
               element={

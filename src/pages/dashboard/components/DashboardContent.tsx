@@ -1,8 +1,8 @@
 import { lazy, Suspense } from 'react';
 import { NavItem } from '../Dashboard';
+
 import './DashboardContent.scss';
 
-// Lazy loading de componentes
 const DashboardHome = lazy(() => import('../features/dashHome/DashHome'));
 const Inbox = lazy(() => import('../features/inbox/Inbox'));
 const Calendar = lazy(() => import('../features/calendar/Calendar'));
@@ -43,7 +43,7 @@ export default function DashboardContent({ currentSection }: DashboardContentPro
 
     return (
         <main className="dashboard-content">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div>Loading...</div>}> {/*Cambiar por un spinner */}
                 {renderContent()}
             </Suspense>
         </main>
