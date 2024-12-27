@@ -16,6 +16,8 @@ const TCHR_COLORS = {
 
 const TCHR_VARS = {
   backgroundColor: '#f7f7f7',
+  backgroundColorWhite: '#ffffff',
+  backgroundColorDark: '#333333',
   textColorBlack: '#000000',
   textColorDark: '#333333',
   textColorLight: '#666666',
@@ -39,7 +41,6 @@ const theme = createTheme({
       dark: TCHR_COLORS[900],
     },
     background: {
-      default: TCHR_VARS.backgroundColor,
       paper: TCHR_VARS.textColorWhite,
     },
     text: {

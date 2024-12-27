@@ -2,7 +2,9 @@
 
 .dashboard-content {
     padding: 2rem;
-    background-color: $talentcontrolhr-500;
-    height: 100vh;
+    height: calc(100vh - 2rem);
     overflow-y: auto;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: $background-white;
 }

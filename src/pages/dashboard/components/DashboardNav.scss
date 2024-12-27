@@ -3,22 +3,9 @@
 .dashboard-nav {
     height: 100vh;
     width: 250px;
-    transition: all 0.3s ease;
-    border-right: 1px solid $talentcontrolhr-200;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-
-    &.collapsed {
-        width: 80px;
-
-        .nav-header {
-            img {
-                width: 50px;
-                height: auto;
-            }
-        }
-    }
 
     .nav-header {
         flex-shrink: 0;
@@ -26,12 +13,10 @@
         align-items: center;
         justify-content: center;
         padding-bottom: 1rem;
-        border-bottom: 1px solid $talentcontrolhr-200;
 
         img {
             width: 85%;
             height: auto;
-            transition: width 0.2s ease;
         }
     }
 
@@ -39,32 +24,85 @@
         flex-grow: 1;
         overflow-y: auto;
         margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .nav-section {
+            background-color: $background-white;
+            border-radius: $border-radius;
+            padding: .5rem;
+
+            .nav-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+
+                .nav-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    padding: 0.75rem 1rem;
+                    border-radius: $border-radius;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                    color: $talentcontrolhr-900;
+
+                    .nav-icon {
+                        font-size: 1.25rem;
+                        color: inherit;
+                    }
+
+                    span {
+                        font-size: 0.9rem;
+                        font-weight: 500;
+                    }
+
+                    &:hover {
+                        background-color: $talentcontrolhr-100;
+                    }
+
+                    &.selected {
+                        background-color: $talentcontrolhr-500;
+                        color: $text-color-white;
+                    }
+                }
+            }
+        }
     }
 
     .nav-footer {
         flex-shrink: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
         padding-top: 1rem;
-        border-top: 1px solid $talentcontrolhr-200;
-        width: 100%;
 
-        .toggle-button {
-            cursor: pointer;
-            background: none;
-            border: none;
-            color: $talentcontrolhr-600;
+        .nav-footer-user {
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding: 0.5rem;
+            gap: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: $background-white;
             border-radius: $border-radius;
-            transition: all 0.2s ease;
+            cursor: pointer;
 
-            &:hover {
-                background-color: $talentcontrolhr-100;
+            .nav-footer-text {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-size: 0.8rem;
+                    margin: 0;
+
+                    &.name {
+                        font-weight: 500;
+                        color: $text-color-black;
+                    }
+
+                    &.email {
+                        color: $text-color-light;
+                    }
+                }
             }
         }
     }

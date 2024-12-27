@@ -9,7 +9,7 @@ import Auth from './pages/landing/auth/Auth';
 
 import ProtectedRoute from './components/ProtectedRoute';
 import ThemeLight from './theme/ThemeLight';
-import './index.scss'
+import './styles/index.scss'
 
 const VITE_CLERK_PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
