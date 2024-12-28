@@ -1,7 +1,7 @@
 import { SignIn, SignUp, useAuth } from '@clerk/clerk-react';
 import { Navigate } from 'react-router-dom';
 
-import logo from '../../assets/logo/logo_tchr.png';
+import logo from '../../assets/logo/logo_text_h white.png';
 
 import './Home.scss';
 

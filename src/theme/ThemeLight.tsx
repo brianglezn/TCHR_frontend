@@ -41,11 +41,11 @@ const theme = createTheme({
       dark: TCHR_COLORS[900],
     },
     background: {
-      paper: TCHR_VARS.textColorWhite,
+      paper: TCHR_VARS.backgroundColor,
     },
     text: {
-      primary: TCHR_COLORS[950],
-      secondary: TCHR_COLORS[700],
+      primary: TCHR_VARS.textColorDark,
+      secondary: TCHR_VARS.textColorLight,
     },
   },
   typography: {

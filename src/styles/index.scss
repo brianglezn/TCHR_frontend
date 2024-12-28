@@ -34,13 +34,11 @@
 
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: $background-color;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-width: 100vw;
     min-height: 100vh;
-    color: $text-color-dark;
 
     .loading-container {
         display: flex;
